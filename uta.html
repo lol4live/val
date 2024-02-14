@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #ff71d9;
+      color: rgb(0, 7, 139);
+      padding: 36px 19px;
+      border:10px none ;
+      cursor: pointer;
+      opacity: 0.8;
+    font-size: large;
+    font-weight: bold;
+      bottom: 23px;
+      right: 28px;
+      width: 490px;
+      margin:400px ;
+    }
+    
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: absolute;
+      margin: 290px;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+        margin-top: 0px;
+      max-width: 600px;
+      height: 400px;
+      padding: 10px;
+      background-color: rgb(255, 194, 248);
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 26px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:30px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: rgb(255, 126, 141);
+    }
+    .form-container img{
+        width: 150px;
+        margin-left: 50px;
+    }
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    .imga{
+        width: 50px;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 600px;
+    }
+    </style>
+</head>
+<body>
+    <div class="imga">
+<img src="gamb.png" style="width: 500px;">
+</div>
+<button class="open-button" onclick="openForm()">Click me :D</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+  <h5> Happy Valentine haru! hope you like it :> since i cant send you a chocolate. hope you got a chocolate from some one :)</h5>
+   <img src="ehe.png">
+   <h6>silver queen the a choclate fom my country :3</h6>
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+    </body>
+    </html>
